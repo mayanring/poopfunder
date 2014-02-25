@@ -1,0 +1,20 @@
+Post
+  has many comments
+  belongs to a user (author)
+
+  bonus:
+  has many commenters (users who commented)
+
+Comment
+  belongs to post
+  belongs to a user
+
+User
+  has many comments
+  has many posts (these are the posts they authored)
+
+  bonus:
+  has many commented posts (these are the posts they commented on)
+
+
+

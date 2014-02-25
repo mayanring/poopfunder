@@ -1,0 +1,7 @@
+class ChangeUserToAuthor < ActiveRecord::Migration
+  def change
+    change_table :posts do |t|
+      t.rename :user_id, :author_id
+    end
+  end
+end
